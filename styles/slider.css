@@ -1,0 +1,96 @@
+
+/* Основные стили */
+/* --------------- HEADER-SLIDER --------------- */
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+}
+
+/* Слайд */
+.header__slider .slick-slide{}
+/* Слайд активный */
+.header__slider .slick-slide.slick-active{}
+/* Слайд основной */
+.header__slider .slick-slide.slick-current{}
+/* Слайд по центру */
+.header__slider .slick-slide.slick-center{}
+
+/* Стрелка */
+.header__slider .slick-arrow{
+	position: absolute;
+	z-index: 9999;
+	top: 60%;
+	width: 60px;
+	height: 60px;
+}
+/* Стрелка влево */
+.header__slider .slick-arrow.slick-prev{
+	font-size: 0;
+	background: url(../images/plant_alider_arrows/icons8-left-100.png) 0 0/cover no-repeat;	
+}	
+/* Стрелка вправо */
+.header__slider .slick-arrow.slick-next{
+	left: 60px;
+	font-size: 0;
+	background: url(../images/plant_alider_arrows/icons8-right-100.png) 0 0/cover no-repeat;
+}
+/* Стрелка не активная */
+.header__slider .slick-arrow.slick-disabled{}
+
+/* Точки */
+.header__slider .slick-dots{}
+.header__slider .slick-dots li{}
+.header__slider .slick-dots button{}
+
+/* --------------- PLANTS-SLIDER --------------- */
+.plants_content .slick-slider{
+	min-width: 0;
+	padding-bottom: 65px;
+}
+/* Слайд */
+.plants_slider .slick-slide{}
+/* Слайд активный */
+.plants_slider .slick-slide.slick-active{}
+/* Слайд основной */
+.plants_slider .slick-slide.slick-current{}
+/* Слайд по центру */
+.plants_slider .slick-slide.slick-center{}
+
+/* Стрелка */
+.plants_slider .slick-arrow{
+	position: absolute;
+	bottom: 0;
+	width: 60px;
+	height: 60px;
+	z-index: 9999;
+	margin-left: -60px;
+}
+/* Стрелка влево */
+.plants_slider .slick-arrow.slick-prev{
+	font-size: 0;
+	background: url("../images/plant_alider_arrows/icons8-left-100.png") 0 0/cover no-repeat;
+	left: 50%;
+}
+/* Стрелка вправо */
+.plants_slider .slick-arrow.slick-next{
+	font-size: 0;
+	background: url("../images/plant_alider_arrows/icons8-right-100.png") 0 0/cover no-repeat;
+	left: calc(50% + 60px);
+}
+/* Стрелка не активная */
+.plants_slider .slick-arrow.slick-disabled{}
+
+/* Точки */
+.plants_slider .slick-dots{}
+.plants_slider .slick-dots li{}
+.plants_slider .slick-dots button{}
