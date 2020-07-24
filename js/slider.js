@@ -3,10 +3,13 @@ $(document).ready(function(){
 		fade: true,
 		easing: 'linear',
 		autoplay: true, 
-		autoplaySpeed: 2000
+		autoplaySpeed: 1500
 	});
 	$('.plants_slider').slick({
 		variableWidth: true,
 		centerMode: true,
+		autoplay: true,
+		autoplaySpeed: 1800,
+		easing: 'ease-in-out'
 	});
 });

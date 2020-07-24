@@ -30,19 +30,84 @@
 	position: absolute;
 	z-index: 9999;
 	top: 60%;
-	width: 60px;
-	height: 60px;
+	
+	color: #03c03c;
+    line-height: 60px;
+    width: 65px;
+    height: 65px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #03c03c;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    background: transparent;
+
+	 -moz-osx-font-smoothing: grayscale;
+	 -webkit-font-smoothing: antialiased;
+	 display: inline-block;
+	 font-style: normal;
+	 font-variant: normal;
+	 text-rendering: auto;
+	 line-height: 1; 
+
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}
+@media screen and (max-width: 914px) {
+	.header__slider .slick-arrow {
+		top: 70%;
+	}
+}
+@media screen and (min-width: 770px) {
+	.header__slider .slick-arrow:hover {
+		background: #03c03c;
+	}
+	.header__slider .slick-arrow.slick-prev:hover:before {
+		color: #fff;
+	} 
+	.header__slider .slick-arrow.slick-next:hover:before {
+		color: #fff;
+	}
+}
+@media screen and (max-width: 769px) {
+	.header__slider .slick-arrow {
+		top: 70%;
+	}
+	.header__slider .slick-arrow:active {
+		background: #03c03c;
+	}
+	.header__slider .slick-arrow.slick-prev:active:before {
+		color: #fff;
+	}
+	.header__slider .slick-arrow.slick-next:active:before {
+		color: #fff;
+	}
 }
 /* Стрелка влево */
-.header__slider .slick-arrow.slick-prev{
+.header__slider .slick-arrow.slick-prev {
 	font-size: 0;
-	background: url(../images/plant_alider_arrows/icons8-left-100.png) 0 0/cover no-repeat;	
 }	
+.header__slider .slick-arrow.slick-prev:before {
+	content: "\f100";
+	color: #03c03c;
+	font-size: 35px;
+	background: transparent;
+}
 /* Стрелка вправо */
-.header__slider .slick-arrow.slick-next{
-	left: 60px;
+.header__slider .slick-arrow.slick-next {
+	left: 70px;
 	font-size: 0;
-	background: url(../images/plant_alider_arrows/icons8-right-100.png) 0 0/cover no-repeat;
+}
+.header__slider .slick-arrow.slick-next:before {
+	content: "\f101";
+	color: #03c03c;
+	font-size: 35px;
+	background: transparent;
 }
 /* Стрелка не активная */
 .header__slider .slick-arrow.slick-disabled{}
@@ -70,22 +135,68 @@
 .plants_slider .slick-arrow{
 	position: absolute;
 	bottom: 0;
-	width: 60px;
-	height: 60px;
 	z-index: 9999;
-	margin-left: -60px;
+	margin-left: -65px;
+
+	color: #03c03c;
+    line-height: 60px;
+    width: 65px;
+    height: 65px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #03c03c;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    background: #fff;
+
+	 -moz-osx-font-smoothing: grayscale;
+	 -webkit-font-smoothing: antialiased;
+	 display: inline-block;
+	 font-style: normal;
+	 font-variant: normal;
+	 text-rendering: auto;
+	 line-height: 1; 
+
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}
+@media screen and (min-width: 770px) {
+	.plants_slider>.slick-arrow:hover {
+		background: #03c03c;
+	}
+	.plants_slider .slick-arrow.slick-prev:hover:before {
+		color: #fff;
+	}
+	.plants_slider .slick-arrow.slick-next:hover:before {
+		color: #fff;
+	}
 }
 /* Стрелка влево */
 .plants_slider .slick-arrow.slick-prev{
 	font-size: 0;
-	background: url("../images/plant_alider_arrows/icons8-left-100.png") 0 0/cover no-repeat;
 	left: 50%;
+	transition: 0.3s;
+}
+.plants_slider .slick-arrow.slick-prev:before {
+	content: "\f100";
+	font-size: 30px;
+	color: #03c03c;
+	background: transparent;
 }
 /* Стрелка вправо */
-.plants_slider .slick-arrow.slick-next{
+.plants_slider .slick-arrow.slick-next {
 	font-size: 0;
-	background: url("../images/plant_alider_arrows/icons8-right-100.png") 0 0/cover no-repeat;
-	left: calc(50% + 60px);
+	left: calc(50% + 70px);
+}
+.plants_slider .slick-arrow.slick-next:before {
+	content: "\f101";
+	font-size: 30px;
+	color: #03c03c;
 }
 /* Стрелка не активная */
 .plants_slider .slick-arrow.slick-disabled{}
@@ -94,3 +205,18 @@
 .plants_slider .slick-dots{}
 .plants_slider .slick-dots li{}
 .plants_slider .slick-dots button{}
+
+
+
+@media screen and (max-width: 769px) {
+	.plants_slider .slick-arrow:active {
+		background: #03c03c;
+	}
+	.plants_slider .slick-arrow.slick-prev:active:before {
+		color: #fff;
+	}
+	.plants_slider .slick-arrow.slick-next:active:before {
+		color: #fff;
+	}
+}
+
