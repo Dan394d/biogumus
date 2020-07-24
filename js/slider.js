@@ -3,7 +3,16 @@ $(document).ready(function(){
 		fade: true,
 		easing: 'linear',
 		autoplay: true, 
-		autoplaySpeed: 1500
+		autoplaySpeed: 1500,
+		responsive:[
+			{
+				breakpoint: 500,
+				settings: {
+					dots: false,
+					arrows: false
+				}
+			}
+		]
 	});
 	$('.plants_slider').slick({
 		variableWidth: true,
