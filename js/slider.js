@@ -6,7 +6,7 @@ $(document).ready(function(){
 		autoplaySpeed: 1500,
 		responsive:[
 			{
-				breakpoint: 500,
+				breakpoint: 767,
 				settings: {
 					dots: false,
 					arrows: false
@@ -20,5 +20,8 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 1800,
 		easing: 'ease-in-out'
+	});
+	$('.menu__burger').click(function(event){
+		$('.header__menu_bar, .header__menu_items').toggleClass('active');
 	});
 });
