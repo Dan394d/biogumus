@@ -22,6 +22,7 @@ $(document).ready(function(){
 		easing: 'ease-in-out'
 	});
 	$('.menu__burger').click(function(event){
-		$('.header__menu_bar, .header__menu_items').toggleClass('active');
+		$('.header__menu_bar, .header__menu_items, .burger__line').toggleClass('active');
+		$('body').toggleClass('lock');
 	});
 });
